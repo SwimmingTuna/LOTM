@@ -1,6 +1,7 @@
 package net.swimmingtuna.lotm;
 
 import com.mojang.logging.LogUtils;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -45,8 +46,29 @@ public class LOTM
     }
 
     // Add the example block item to the building blocks tab
-    private void addCreative(BuildCreativeModeTabContentsEvent event)
-    {
+    private void addCreative(BuildCreativeModeTabContentsEvent event) {
+        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+                event.accept(ModItems.MindReading);
+                event.accept(ModItems.Awe);
+                event.accept(ModItems.Frenzy);
+                event.accept(ModItems.Placate);
+                event.accept(ModItems.BattleHypnotism);
+                event.accept(ModItems.PsychologicalInvisibility);
+                event.accept(ModItems.Guidance);
+                event.accept(ModItems.Manipulation);
+                event.accept(ModItems.MentalPlague);
+                event.accept(ModItems.MindStorm);
+                event.accept(ModItems.ConsciousnessStroll);
+                event.accept(ModItems.DragonBreath);
+                event.accept(ModItems.PlagueStorm);
+                event.accept(ModItems.DreamWeaving);
+                event.accept(ModItems.Discern);
+                event.accept(ModItems.DreamIntoReality);
+                event.accept(ModItems.Prophesize);
+                event.accept(ModItems.Envision);
+
+
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
