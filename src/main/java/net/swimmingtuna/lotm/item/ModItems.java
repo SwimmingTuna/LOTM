@@ -45,7 +45,21 @@ public static final RegistryObject<Item> MindReading = ITEMS.register("mindreadi
             ()-> new Item(new Item.Properties()));
     public static final RegistryObject<Item> Prophesize = ITEMS.register("prophesize",
             ()-> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> Envision = ITEMS.register("envision",
+    public static final RegistryObject<Item> EnvisionLife = ITEMS.register("envisionlife",
+            ()-> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> EnvisionNature = ITEMS.register("envisionnature",
+            ()-> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> EnvisionWeather = ITEMS.register("envisionweather",
+            ()-> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> EnvisionBarrier = ITEMS.register("envisionbarrier",
+            ()-> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> EnvisionDeath = ITEMS.register("envisiondeath",
+            ()-> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> EnvisionKingdom = ITEMS.register("envisionkingdom",
+            ()-> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> EnvisionLocation = ITEMS.register("envisionlocation",
+            ()-> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> EnvisionHealth = ITEMS.register("envisionhealth",
             ()-> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {

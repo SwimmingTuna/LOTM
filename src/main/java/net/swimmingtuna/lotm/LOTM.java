@@ -65,7 +65,15 @@ public class LOTM
                 event.accept(ModItems.Discern);
                 event.accept(ModItems.DreamIntoReality);
                 event.accept(ModItems.Prophesize);
-                event.accept(ModItems.Envision);
+                event.accept(ModItems.EnvisionLife);
+                event.accept(ModItems.EnvisionNature);
+                event.accept(ModItems.EnvisionWeather);
+                event.accept(ModItems.EnvisionBarrier);
+                event.accept(ModItems.EnvisionDeath);
+                event.accept(ModItems.EnvisionKingdom);
+                event.accept(ModItems.EnvisionLocation);
+                event.accept(ModItems.EnvisionHealth);
+
 
 
         }

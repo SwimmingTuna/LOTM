@@ -15,6 +15,13 @@
   "item.lotm.dreamweaving": "Dream Weaving",
   "item.lotm.discern": "Discern",
   "item.lotm.dreamintoreality": "Dream into Reality",
-  "item.lotm.prophecy": "Prophecy",
-  "item.lotm.envision": "Envision"
+  "item.lotm.prophesize": "Prophesize",
+  "item.lotm.envisionlife": "Envision Life",
+  "item.lotm.envisionnature": "Envision Nature",
+  "item.lotm.envisionweather": "Envision Weather",
+  "item.lotm.envisionbarrier": "Envision Barrier",
+  "item.lotm.envisiondeath": "Envision Death",
+  "item.lotm.envisionkingdom": "Envision Kingdom",
+  "item.lotm.envisionlocation": "Envision Location",
+  "item.lotm.envisionhealth": "Envision Health"
 }
