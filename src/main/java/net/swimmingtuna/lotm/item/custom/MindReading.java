@@ -43,7 +43,6 @@ public class MindReading extends Item {
                 AttributeModifier beyonderModifier = attackRange.getModifier(uuidforOppositeHand);
                 double range = pPlayer.getAttributeValue(ForgeMod.ENTITY_REACH.get());
                 double trueReach = range == 15 ? 0 : range + (pPlayer.isCreative() ? 0: 0);
-                boolean tooFar = !pPlayer.isCloseEnough(pInteractionTarget, trueReach);
                 attackRange.addTransientModifier(beyonderModifier);
 
 
