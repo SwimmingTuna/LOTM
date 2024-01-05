@@ -14,8 +14,12 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.common.ForgeMod;
+import net.swimmingtuna.lotm.events.ReachChange;
 
 import java.util.UUID;
+
+import static net.swimmingtuna.lotm.events.ReachChange.BeyonderBlockReach;
+import static net.swimmingtuna.lotm.events.ReachChange.BeyonderEntityReach;
 
 
 public class MindReading extends Item {
@@ -23,13 +27,12 @@ public class MindReading extends Item {
 @Deprecated
     public MindReading(Properties pProperties) {
         super(pProperties);}
-    static UUID BeyonderItemEntity = UUID.fromString("ReachEnhancerEntity");
-    static UUID BeyonderItemBlock = UUID.fromString("ReachEnhancerBlock");
+
     public Multimap<Attribute, AttributeModifier> getDefaultAttributeModifiers (EquipmentSlot pSlot) {
         ImmutableMultimap.Builder<Attribute, AttributeModifier> attributeBuilder = ImmutableMultimap.builder();
         attributeBuilder.putAll(super.getDefaultAttributeModifiers(pSlot));
-        attributeBuilder.put(ForgeMod.ENTITY_REACH.get(), new AttributeModifier(BeyonderItemEntity, "Reach modifier", 12, AttributeModifier.Operation.ADDITION));
-        attributeBuilder.put(ForgeMod.BLOCK_REACH.get(), new AttributeModifier(BeyonderItemBlock, "Reach modifier", 12, AttributeModifier.Operation.ADDITION));
+        attributeBuilder.put(ForgeMod.ENTITY_REACH.get(), new AttributeModifier(BeyonderEntityReach, "Reach modifier", 12, AttributeModifier.Operation.ADDITION));
+        attributeBuilder.put(ForgeMod.BLOCK_REACH.get(), new AttributeModifier(BeyonderBlockReach, "Reach modifier", 12, AttributeModifier.Operation.ADDITION));
         return pSlot == EquipmentSlot.MAINHAND ? attributeBuilder.build() : super.getDefaultAttributeModifiers(pSlot);
     }
 
@@ -37,7 +40,7 @@ public class MindReading extends Item {
     @Deprecated
     public InteractionResult interactLivingEntity(ItemStack pStack, Player pPlayer, LivingEntity pInteractionTarget, InteractionHand pUsedHand) {
         if (pUsedHand(pPlayer)) {
-            UUID uuidforOppositeHand = MindReading.BeyonderItemEntity;
+            UUID uuidforOppositeHand = BeyonderEntityReach;
             AttributeInstance attackRange = pPlayer.getAttribute(ForgeMod.ENTITY_REACH.get());
             if (attackRange != null) {
                 AttributeModifier beyonderModifier = attackRange.getModifier(uuidforOppositeHand);
