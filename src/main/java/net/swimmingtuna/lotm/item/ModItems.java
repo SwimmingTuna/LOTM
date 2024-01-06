@@ -6,14 +6,14 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.swimmingtuna.lotm.LOTM;
-import net.swimmingtuna.lotm.item.custom.MindReadingTest;
+import net.swimmingtuna.lotm.item.custom.MindReading;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, LOTM.MOD_ID);
 
     public static final RegistryObject<Item> MindReading = ITEMS.register("mindreading",
-            ()-> new MindReadingTest(new Item.Properties()));
+            ()-> new MindReading(new Item.Properties()));
     public static final RegistryObject<Item> Awe = ITEMS.register("awe",
             ()-> new Item(new Item.Properties()));
     public static final RegistryObject<Item> Frenzy = ITEMS.register("frenzy",
