@@ -1,4 +1,4 @@
-package net.swimmingtuna.lotm.BeyonderStats.BeyonderSpirituality;
+package net.swimmingtuna.lotm.Beyonder.BeyonderStats.BeyonderSpirituality;
 
 import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;

@@ -1,4 +1,4 @@
-package net.swimmingtuna.lotm.BeyonderStats.BeyonderSpirituality;
+package net.swimmingtuna.lotm.Beyonder.BeyonderStats.BeyonderSpirituality;
 
 import net.minecraft.nbt.CompoundTag;
 
@@ -11,8 +11,7 @@ public class BeyonderSpirituality {
             return spirituality;}
 
         public void addSpirituality(int add) {
-            this.spirituality= Math.min(spirituality + add, MAX_SPIRITUALITY);
-        }
+            this.spirituality= Math.min(spirituality + add, MAX_SPIRITUALITY);}
 
         public void subSpirituality(int sub) {
             this.spirituality = Math.max(spirituality - sub, MIN_SPIRUALITY);

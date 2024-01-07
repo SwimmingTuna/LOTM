@@ -23,5 +23,7 @@
   "item.lotm.envisiondeath": "Envision Death",
   "item.lotm.envisionkingdom": "Envision Kingdom",
   "item.lotm.envisionlocation": "Envision Location",
-  "item.lotm.envisionhealth": "Envision Health"
+  "item.lotm.envisionhealth": "Envision Health",
+  "key.category.lotm.lotm": "LOTM Category",
+  "key.lotm.use_spirituality": "Sprituality"
 }
